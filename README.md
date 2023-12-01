@@ -28,26 +28,18 @@ MySQL server installed: Install MySQL
 Setup Instructions
 Clone the repository:
 
-bash
-Copy code
 git clone https://github.com/yourusername/sentiment-analysis-web-service.git
 cd sentiment-analysis-web-service
 Build the Docker image:
 
-bash
-Copy code
 docker build -t your-docker-image:tag .
 Push the Docker image to a container registry (if needed).
 
 Apply the Kubernetes deployment:
 
-bash
-Copy code
 kubectl apply -f deployment.yaml
 Apply the Kubernetes service:
 
-bash
-Copy code
 kubectl apply -f service.yaml
 Access the deployed web service at http://your-cluster-ip:80/predict.
 
